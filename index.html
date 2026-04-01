@@ -1,33 +1,48 @@
-
-
 <!DOCTYPE html>
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
-<title>موقع حميد</title>
+<title>موقع حميد الاحترافي</title>
 
 <style>
 body{
   margin:0;
   font-family:Arial;
-  background:black;
+  background: linear-gradient(135deg,#000,#111827);
   color:white;
+}
+
+/* الهيدر */
+header{
   text-align:center;
+  padding:60px 20px;
 }
 
 h1{
-  margin-top:40px;
   color:#00ffd5;
+  font-size:40px;
 }
 
-img{
-  width:220px;
+p{
+  color:#ccc;
+}
+
+/* الأقسام */
+section{
+  padding:40px 20px;
+  text-align:center;
+}
+
+.card{
+  background:rgba(255,255,255,0.08);
+  margin:20px auto;
+  padding:20px;
+  max-width:500px;
   border-radius:15px;
-  margin-top:20px;
 }
 
+/* زر */
 button{
-  margin-top:20px;
   padding:12px 20px;
   border:none;
   background:#ff0055;
@@ -39,25 +54,52 @@ button{
 button:hover{
   background:#ff3366;
 }
+
+/* رابط */
+a{
+  color:#00ffd5;
+  text-decoration:none;
+  font-weight:bold;
+}
 </style>
 </head>
 
 <body>
 
-<h1>الاسم الجبري حميد</h1>
+<header>
+  <h1>الاسم الجبري حميد</h1>
+  <p>موقع شخصي احترافي على الإنترنت 🌐</p>
+</header>
 
-<p>مرحبًا بك في موقعي 🌐</p>
+<section>
+  <div class="card">
+    <h2>من أنا</h2>
+    <p>أنا حميد، أعمل على تطوير نفسي وبناء موقع احترافي لي على الإنترنت.</p>
+  </div>
 
-<!-- الصورة -->
-<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="صورة">
+  <div class="card">
+    <h2>مشروعي</h2>
+    <p>هذا الموقع لتقديم نفسي وتطوير وجودي الرقمي.</p>
+  </div>
+</section>
 
-<br>
+<section>
+  <div class="card">
+    <h2>تواصل معي</h2>
 
-<!-- الزر -->
-<button onclick="alert('تم الضغط يا حميد 🔥')">
-اضغط هنا
-</button>
+    <p>
+      📱 واتساب: 
+      <a href="https://wa.me/967773488133" target="_blank">
+      اضغط هنا للتواصل
+      </a>
+    </p>
+
+    <button onclick="alert('شكراً لتواصلك معي 🔥')">
+      اضغط للتواصل
+    </button>
+
+  </div>
+</section>
 
 </body>
 </html>
-
